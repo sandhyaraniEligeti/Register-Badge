@@ -4,111 +4,85 @@
 <head>
   <title>contact details</title>
   <link rel="stylesheet" href="css/contact.css">
+  <script>
+    function registerBadge() {
+      var SuccessMsg = "Hi! Your Bade Registered Successfully"
+      alert(SuccessMsg);
+    }
+  </script>
 </head>
 
 <body>
-
   <div class="main_container">
-    <form action="/action_page.php">
-    <div class="leftdiv">
-     
+    <form id="myForm" action="#" onsubmit="registerBadge()">
+      <div class="leftdiv">
         <h2>General Information</h2>
         <select name="country">
           <option value="position">Title</option>
           <option value="UI devoloper">UI devoloper</option>
           <option value="java developer">Java developer</option>
         </select>
-
-        <input type="text" placeholder="FirstName" style="width:43%;float:left; margin-right:10px; ">
-        <input type="text" placeholder="Lastname" style="width:43%;float:left; ">
-
-
-
+        <div class="main_field_div">
+          <div class="left_field_div"><input type="text" name="firstName" placeholder="First Name" required></div>
+          <div class="right_field_div"><input type="text" name="lastName" placeholder="Last Name" required></div>
+        </div>
         <select>
           <option value="position">Position</option>
           <option value="UI devoloper">UI devoloper</option>
-          <option value="java developer">Java developer</option>
+          <option value="Backend developer">Java developer</option>
         </select>
-
-        <input type="text" placeholder="Company">
-
-        <input type="text" placeholder="FirstName" style="width:43%;float:left; margin-right:10px; ">
-        <select style="width:43%; float:left;">
-          <option value="position">Employees</option>
-          <option value="UI devoloper">UI devoloper</option>
-          <option value="java developer">Java developer</option>
-        </select>
-     
-    </div>
-
-
-
-    <div class="rightdiv">
-      <h3>Contact Details</h3>
-
-
-
-      
-        <input type="text" placeholder="Street + Nr">
-        <input type="text" placeholder="Additinoal Information">
+        <input type="text" placeholder="Company" required>
         <div class="main_field_div">
-
           <div class="left_field_div">
-
-            <input type="text" placeholder="Zipcode">
-
+            <input type="text" placeholder="Business Arena" required>
           </div>
           <div class="right_field_div">
-
+            <select>
+              <option value="position">Employees</option>
+              <option value="UI devoloper">UI devoloper</option>
+              <option value="DB developer">Java developer</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="rightdiv">
+        <h3>Contact Details</h3>
+        <input type="text" placeholder="Street + Nr" required>
+        <input type="text" placeholder="Additinoal Information" required>
+        <div class="main_field_div">
+          <div class="left_field_div">
+            <input type="text" placeholder="Zip Code" required>
+          </div>
+          <div class="right_field_div">
             <select id="country" name="country">
               <option value="position">Place</option>
               <option value="UI devoloper">Hyderabad</option>
               <option value="java developer">Vijayawada</option>
             </select>
-
           </div>
-
         </div>
-
-
-
-
         <select>
           <option value="position">Country</option>
           <option value="UI devoloper">India</option>
           <option value="java developer">Singapore</option>
           <option value="java developer">Canada</option>
         </select>
-
         <div class="main_field_div">
           <div class="left_field_div">
             <input type="text" placeholder="Code +">
-
           </div>
           <div class="right_field_div">
-            <input type="text" placeholder="Phone Number">
-
-             
+            <input type="text" placeholder="Phone Number" required>
           </div>
-
         </div>
-
-
-
-
-
         <input type="text" placeholder="Your email"><br />
-
-
         <label class="container">I do accept the <u> Terms and Conditions</u> of your site.
           <input type="checkbox" checked="checked">
           <span class="checkmark"></span>
         </label>
-        <button class="button button1">Register Badge</button>
-      
-    </div>
-
-</form>
+        <input type="submit" value="Register Badge" class="button button1">
+      </div>
+    </form>
   </div>
 </body>
 

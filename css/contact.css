@@ -125,7 +125,11 @@ border:0px;
   border-right: 0px;
   border-top:0px;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.leftdiv ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa;
+  opacity: 1; /* Firefox */
+}
+.rightdiv ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fff;
   opacity: 1; /* Firefox */
 }
@@ -220,6 +224,14 @@ h3{
   transform: rotate(45deg);
 }
 
+.SuccessMsg{
+  width:100%;
+  height: 200px;
+  border: 5px double green;
+  text-align: center;
+  color: green;
+  
+}
 @media only screen and (max-width: 1023px) {
  .leftdiv{
    float: none;
@@ -227,6 +239,7 @@ h3{
    margin: 0px;
    margin-bottom: 10px;
    border-radius: 0px;
+   height:400px;
  }
  .rightdiv{
   width:100%;
