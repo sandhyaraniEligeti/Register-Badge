@@ -141,6 +141,7 @@ h3{
 }
 .button1 {
   background-color: white;
+  outline: 0px;
 }
 
 .button {
@@ -191,12 +192,12 @@ h3{
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #fff;
+  background-color: #4835d5;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #4835d5;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
